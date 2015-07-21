@@ -24,6 +24,7 @@
   "dependencies": {
     "fs": "0.0.2",
     "react-router": "^1.0.0-beta2",
+    "reflux": "^0.2.10",
     "whatwg-fetch": "^0.9.0"
   }
 }

@@ -1,6 +1,6 @@
 var React = require('react');
 var Header = require('./header');
-var Instruments = require('./instruments');
+var Instruments = require('./instrument-list');
 
 module.exports = React.createClass({
 	render: function () {
