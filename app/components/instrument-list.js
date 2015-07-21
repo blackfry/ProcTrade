@@ -15,7 +15,7 @@ module.exports = React.createClass({
 			instruments: []
 		}
 	},
-	componentDidMount: function () {
+	componentWillMount: function () {
 		Actions.getInstruments();
 	},
 	render: function () {
@@ -34,7 +34,7 @@ module.exports = React.createClass({
 						<h4>{instrument.displayName}</h4>
 						<ul>
 							<p>Instrument:  {instrument.instrument}</p>
-							<p>Pip value: {instrument.pip}</p>
+							<p>Pip Value: {instrument.pip}</p>
 							<p>Maximum Trade Unit: {instrument.maxTradeUnits}</p>
 						</ul>
 					</Link>
