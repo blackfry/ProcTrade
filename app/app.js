@@ -1,5 +1,8 @@
 var React = require('react');
-var ReactApp = require('./components/component.js');
-require('./style/bootstrap.css');
+var Routes = require('./routes');
+require('./styles/bootstrap.css');
+//require('./styles/main.css');
+var aapi = require('./utils/api');
 
-React.render(<ReactApp/>, document.body);
+
+React.render(Routes, document.body)

@@ -46,17 +46,27 @@ var config = {
 
 		// I highly recommend using the babel-loader as it gives you
 		// ES6/7 syntax and JSX transpiling out of the box
-		{
-			test: /\.js$/,
-			loader: 'babel',
-			exclude: [nodeModulesPath]
-		},
-
-		{
-			test: /\.css$/,
-			loader: 'style!css'
-		}
-
+			{
+				test: /\.js$/,
+				loader: 'babel',
+				exclude: [nodeModulesPath]
+			},
+			{
+				test: /\.css$/,
+				loader: 'style!css'
+			},
+			
+			{ 
+				test: /\.png$/, 
+				loader: "url-loader?limit=100000" 
+			},
+	    { 
+	      test: /\.jpg$/, 
+	      loaders: [
+	      	"file-loader",
+	      	"url-loader?limit=100000"
+	      	] 
+	    }
 		]
 	},
 

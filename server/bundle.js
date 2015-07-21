@@ -2,7 +2,7 @@ var Webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./../webpack.config.js');
 var path = require('path');
-var mainPath = path.resolve(__dirname, '..', 'app', 'main.js');
+var mainPath = path.resolve(__dirname, '..', 'app', 'app.js');
 
 module.exports = function () {
 
